@@ -1,0 +1,126 @@
+/* Styles for "Experience" component */
+.experienceTitle {
+  color: oklch(28.2% 0.091 267.935);
+  font-size: 5.2rem;
+  margin-top: 10rem;
+  font-family: monospace;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.experienceContentText {
+  color: oklch(28.2% 0.091 267.935);
+  font-size: 1.7rem;
+  margin-top: 2.5rem;
+  font-family: monospace;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.experienceContentImage {
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.20);
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Jump animation on hover */
+.experienceContentImage:hover {
+  animation: jumpLogo 1.2s cubic-bezier(.68, -0.55, .27, 1.55) infinite alternate;
+}
+
+.containerContentExperience {
+  display: flex;
+  justify-content: center;
+  margin: 4rem;
+  gap: 4rem;
+}
+
+/* Animation for title, information and image when they become visible */
+.experienceTitle.visible,
+.experienceContentText.visible,
+.experienceContentImage.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Keyframes for jump animation */
+@keyframes jumpLogo {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+
+  30% {
+    transform: translateY(-60px) scale(1.08);
+  }
+
+  50% {
+    transform: translateY(-30px) scale(0.95);
+  }
+
+  70% {
+    transform: translateY(-10px) scale(1.02);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Responsive styles (mobile) */
+@media (max-width: 450px) {
+  .experienceTitle {
+    font-size: 3.5rem;
+  }
+
+  .experienceContentText {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .experienceContentImage {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    margin-top: 1rem;
+  }
+
+  .containerContentExperience {
+    flex-direction: column;
+    margin: 1rem;
+    gap: 2rem;
+  }
+}
+
+/* Responsive styles (tablet) */
+@media (min-width: 600px) and (max-width: 1200px) {
+  .experienceTitle {
+    font-size: 4.2rem;
+  }
+
+  .experienceContentText {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .experienceContentImage {
+    width: 300px;
+    height: 300px;
+    align-self: center;
+    margin-top: 1rem;
+  }
+
+  .containerContentExperience {
+    flex-direction: column;
+    margin: 2rem;
+    gap: 3rem;
+  }
+}

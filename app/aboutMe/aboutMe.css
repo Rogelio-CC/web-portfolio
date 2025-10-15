@@ -1,0 +1,132 @@
+/* Styles for "About Me" component */
+.aboutMeTitle {
+  color: oklch(28.2% 0.091 267.935);
+  font-size: 5.2rem;
+  margin-top: 10rem;
+  font-family: monospace;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+
+.aboutMeContentText {
+  color: oklch(28.2% 0.091 267.935);
+  font-size: 1.7rem;
+  font-family: monospace;
+  text-align: start;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.aboutMeContentImage {
+  width: 300px;
+  height: 300px;
+  margin-top: -3.5rem;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.20);
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Jump animation on hover */
+.aboutMeContentImage:hover {
+  animation: jumpLogo 1.2s cubic-bezier(.68, -0.55, .27, 1.55) infinite alternate;
+}
+
+.containerContentAboutMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 4rem;
+  gap: 4rem;
+  margin-bottom: 9rem;
+}
+
+/* Animation for title, information and image when they become visible */
+.aboutMeTitle.visible,
+.aboutMeContentText.visible,
+.aboutMeContentImage.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Keyframes for jump animation */
+@keyframes jumpLogo {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+
+  30% {
+    transform: translateY(-60px) scale(1.08);
+  }
+
+  50% {
+    transform: translateY(-30px) scale(0.95);
+  }
+
+  70% {
+    transform: translateY(-10px) scale(1.02);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Responsive styles (mobile) */
+@media (max-width: 450px) {
+  .aboutMeTitle {
+    font-size: 3.5rem;
+  }
+
+  .aboutMeContentText {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .aboutMeContentImage {
+    width: 200px;
+    height: 200px;
+    margin-top: 1rem;
+    align-self: center;
+  }
+
+  .containerContentAboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+/* Responsive styles (tablet) */
+@media (min-width: 600px) and (max-width: 1200px) {
+  .aboutMeTitle {
+    font-size: 4.2rem;
+  }
+
+  .aboutMeContentText {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .aboutMeContentImage {
+    width: 300px;
+    height: 300px;
+    align-self: center;
+    margin-top: 1rem;
+  }
+
+  .containerContentAboutMe {
+    flex-direction: column;
+    margin: 2rem;
+    gap: 3rem;
+  }
+}

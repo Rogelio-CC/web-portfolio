@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Global Styles (only background color used for the main page (welcome)) */
+html,
+body {
+  background-color: oklch(90% 0.05 267.935);
+}

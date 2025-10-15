@@ -1,0 +1,216 @@
+/* Styles for "Relevant Projects" Component */
+.projectsTitle {
+  color: oklch(28.2% 0.091 267.935);
+  margin-top: 10rem;
+  font-size: 5.2rem;
+  font-family: monospace;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.projectInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.projectInfo h3 {
+  color: oklch(28.2% 0.091 267.935);
+  font-size: 2.2rem;
+  font-family: monospace;
+  margin-bottom: 0.5rem;
+}
+
+.projectInfo p {
+  color: oklch(28.2% 0.091 267.935);
+  font-size: 1.2rem;
+  font-family: monospace;
+  margin-bottom: 0.5rem;
+}
+
+.projectsContainerWeb,
+.projectsContainerMobile {
+  display: flex;
+  background: oklch(90% 0.05 267.935);
+  border: 4px solid oklch(28.2% 0.091 267.935);
+  border-radius: 18px;
+  box-shadow: 0 15px 16px 0 rgba(0, 0, 0, 0.25);
+  padding: 4rem;
+  gap: 3rem;
+  margin: 5rem auto 7rem auto;
+  width: 90%;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Animation for title and containers when they become visible */
+.projectsTitle.visible,
+.projectsContainerWeb.visible,
+.projectsContainerMobile.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobileProjectsImg {
+  width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.18);
+  background: oklch(90% 0.05 267.935);
+  transition: transform 0.3s cubic-bezier(.68, -0.55, .27, 1.55), box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.webProjectsImg {
+  width: 523px;
+  height: 320px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.18);
+  background: oklch(90% 0.05 267.935);
+  transition: transform 0.3s cubic-bezier(.68, -0.55, .27, 1.55), box-shadow 0.3s;
+  cursor: pointer;
+}
+
+/* Hover effects for images */
+.mobileProjectsImg:hover,
+.webProjectsImg:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.18);
+}
+
+.projectRepoBtn {
+  background: oklch(28.2% 0.091 267.935);
+  color: oklch(90% 0.05 267.935);
+  font-family: monospace;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12);
+  transition: background 0.5s, color 0.5s, transform 0.2s;
+  margin-top: 1rem;
+}
+
+/* Hover effects to change background for projectRepoBtn */
+.projectRepoBtn:hover {
+  background: oklch(90% 0.05 267.935);
+  color: oklch(28.2% 0.091 267.935);
+  border: 2px solid oklch(28.2% 0.091 267.935);
+  transform: translateY(-3px) scale(1.04);
+}
+
+.projectImagesCarouselWeb,
+.projectImagesCarouselMobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.carouselBtn {
+  background: oklch(90% 0.05 267.935);
+  color: oklch(28.2% 0.091 267.935);
+  border-radius: 50%;
+  border: none;
+  font-size: 2.2rem;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.20);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effects to change background for carouselBtn */
+.carouselBtn:hover {
+  background: oklch(28.2% 0.091 267.935);
+  color: oklch(90% 0.05 267.935);
+  transform: scale(1.08);
+}
+
+/* Responsive styles (mobile) */
+@media (max-width: 450px) {
+  .projectsTitle {
+    font-size: 3.5rem;
+  }
+
+  .projectsContainerWeb,
+  .projectsContainerMobile {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .webProjectsImg {
+    width: 90%;
+    height: auto;
+  }
+
+  .projectInfo h3 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .projectInfo p {
+    font-size: 1rem;
+  }
+
+  .projectRepoBtn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .carouselBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+  }
+}
+
+/* Responsive styles (tablet) */
+@media (min-width: 600px) and (max-width: 1200px) {
+  .projectsTitle {
+    font-size: 4.2rem;
+  }
+
+  .projectsContainerWeb,
+  .projectsContainerMobile {
+    flex-direction: column;
+    padding: 3rem;
+    gap: 2.5rem;
+  }
+
+  .webProjectsImg {
+    height: auto;
+  }
+
+  .projectImagesCarouselMobile {
+    align-self: center;
+  }
+
+  .projectInfo h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .projectInfo p {
+    font-size: 1.1rem;
+  }
+
+  .projectRepoBtn {
+    font-size: 1.05rem;
+    padding: 0.65rem 1.3rem;
+  }
+
+  .carouselBtn {
+    width: 44px;
+    height: 44px;
+    font-size: 2rem;
+  }
+}

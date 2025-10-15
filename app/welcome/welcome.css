@@ -1,0 +1,11 @@
+/* Importing CSS files for different components */
+@import '../aboutMe/aboutMe.css';
+@import '../experience/experience.css';
+@import '../headerTitleWithPhoto/headerTitle.css';
+@import '../navbar/navbar.css';
+@import '../relevantProjects/relevantProjects.css';
+@import '../softSkills/softSkills.css';
+@import '../technicalSkills/technicalSkills.css';
+@import '../changeIdiomSwitch/changeIdiomSwitch.css';
+
+
