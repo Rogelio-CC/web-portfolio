@@ -2,7 +2,7 @@ import { jsx, jsxs, Fragment } from "react/jsx-runtime";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 /* empty css                 */
-const myPhoto = "https://rogelio-cc.github.io/web-portfolio/assets/My_photo-LkSHoj30.jpg";
+const myPhoto = "/web-portfolio/assets/My_photo-LkSHoj30.jpg";
 const HeaderTitle = () => {
   const { t } = useTranslation();
   const textHeader = t("headerTitle.title");
