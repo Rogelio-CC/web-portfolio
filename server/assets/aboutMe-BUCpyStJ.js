@@ -2,7 +2,7 @@ import { jsxs, jsx } from "react/jsx-runtime";
 import { useRef, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 /* empty css                 */
-const myLogo = "https://rogelio-cc.github.io/web-portfolio/assets/My_logo_Dark-B7wWsqo1.png";
+const myLogo = "https://Rogelio-CC.github.io/web-portfolio/assets/My_logo_Dark-B7wWsqo1.png";
 const AboutMe = () => {
   const { t } = useTranslation();
   const aboutMeTitleRef = useRef(null);
