@@ -1,7 +1,7 @@
 {
   "name": "my-website-rcc",
   "private": true,
-  "homepage": "https://rogelio-cc.github.io/web-portfolio/",
+  "homepage": "https://rogelio-cc.github.io/web-portfolio",
   "type": "module",
   "scripts": {
     "build": "react-router build",
