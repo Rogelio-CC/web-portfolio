@@ -2,7 +2,7 @@ import { jsxs, jsx } from "react/jsx-runtime";
 import { useRef, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 /* empty css                 */
-const salleLogo = "https://Rogelio-CC.github.io/web-portfolio/assets/Salle_Logo-BXb1e3hM.png";
+const salleLogo = "https://rogelio-cc.github.io/web-portfolio/assets/Salle_Logo-BXb1e3hM.png";
 const Experience = () => {
   const { t } = useTranslation();
   const experiencieTitleRef = useRef(null);
