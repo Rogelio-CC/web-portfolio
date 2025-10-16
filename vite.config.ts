@@ -5,5 +5,5 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
-  base: "/web-portfolio"
+  base: "https://rogelio-cc.github.io/web-portfolio/"
 });
