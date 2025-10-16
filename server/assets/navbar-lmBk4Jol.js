@@ -31,7 +31,7 @@ const ContactModal = ({ open, onClose }) => {
     document.body
   );
 };
-const myLogo = "https://Rogelio-CC.github.io/web-portfolio/assets/My_logo_light-CbnRYPAJ.png";
+const myLogo = "/web-portfolio/assets/My_logo_light-CbnRYPAJ.png";
 const Navbar = () => {
   const { t } = useTranslation();
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);

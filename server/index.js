@@ -114,13 +114,13 @@ const route0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   default: root,
   links
 }, Symbol.toStringTag, { value: "Module" }));
-const Navbar = lazy(() => import("./assets/navbar-CucvgB2V.js"));
-const HeaderTitle = lazy(() => import("./assets/headerTitle-DfCVOjci.js"));
-const AboutMe = lazy(() => import("./assets/aboutMe-BUCpyStJ.js"));
-const Experience = lazy(() => import("./assets/experience-SL7aim4i.js"));
+const Navbar = lazy(() => import("./assets/navbar-lmBk4Jol.js"));
+const HeaderTitle = lazy(() => import("./assets/headerTitle-DMyeFI-i.js"));
+const AboutMe = lazy(() => import("./assets/aboutMe-CYOB2c0h.js"));
+const Experience = lazy(() => import("./assets/experience-Cd-wz4hN.js"));
 const TechnicalSkills = lazy(() => import("./assets/technicalSkills-DdkoUKph.js"));
 const SoftSkills = lazy(() => import("./assets/softSkills-BSn5rMbi.js"));
-const RelevantProjects = lazy(() => import("./assets/relevantProjects-DF4YRFHK.js"));
+const RelevantProjects = lazy(() => import("./assets/relevantProjects--Mz8Fg_7.js"));
 const ChangeIdiomSwitch = lazy(() => import("./assets/changeIdiomSwitch-DYdRexKC.js"));
 function Welcome() {
   const loadingScreen = {
@@ -310,7 +310,7 @@ const route1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   default: home,
   meta
 }, Symbol.toStringTag, { value: "Module" }));
-const serverManifest = { "entry": { "module": "https://Rogelio-CC.github.io/web-portfolioassets/entry.client-hoX_j7we.js", "imports": ["https://Rogelio-CC.github.io/web-portfolioassets/chunk-PVWAREVJ-DMgj7qrf.js", "https://Rogelio-CC.github.io/web-portfolioassets/index-CXfQQoB0.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": true, "module": "https://Rogelio-CC.github.io/web-portfolioassets/root-CZi-rwNd.js", "imports": ["https://Rogelio-CC.github.io/web-portfolioassets/chunk-PVWAREVJ-DMgj7qrf.js", "https://Rogelio-CC.github.io/web-portfolioassets/index-CXfQQoB0.js"], "css": ["https://Rogelio-CC.github.io/web-portfolioassets/root-DzG5AUd3.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "https://Rogelio-CC.github.io/web-portfolioassets/home-DAbhkvpt.js", "imports": ["https://Rogelio-CC.github.io/web-portfolioassets/home-DGNrsVXw.js", "https://Rogelio-CC.github.io/web-portfolioassets/chunk-PVWAREVJ-DMgj7qrf.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "https://Rogelio-CC.github.io/web-portfolioassets/manifest-f936222a.js", "version": "f936222a", "sri": void 0 };
+const serverManifest = { "entry": { "module": "/web-portfolioassets/entry.client-hoX_j7we.js", "imports": ["/web-portfolioassets/chunk-PVWAREVJ-DMgj7qrf.js", "/web-portfolioassets/index-CXfQQoB0.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": true, "module": "/web-portfolioassets/root-CZi-rwNd.js", "imports": ["/web-portfolioassets/chunk-PVWAREVJ-DMgj7qrf.js", "/web-portfolioassets/index-CXfQQoB0.js"], "css": ["/web-portfolioassets/root-DzG5AUd3.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/web-portfolioassets/home-kepDCH5G.js", "imports": ["/web-portfolioassets/home-N8ppb0wx.js", "/web-portfolioassets/chunk-PVWAREVJ-DMgj7qrf.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/web-portfolioassets/manifest-af328a9f.js", "version": "af328a9f", "sri": void 0 };
 const assetsBuildDirectory = "build\\client";
 const basename = "/";
 const future = { "unstable_middleware": false, "unstable_optimizeDeps": false, "unstable_splitRouteModules": false, "unstable_subResourceIntegrity": false, "unstable_viteEnvironmentApi": false };
@@ -318,7 +318,7 @@ const ssr = true;
 const isSpaMode = false;
 const prerender = [];
 const routeDiscovery = { "mode": "lazy", "manifestPath": "/__manifest" };
-const publicPath = "https://Rogelio-CC.github.io/web-portfolio";
+const publicPath = "/web-portfolio";
 const entry = { module: entryServer };
 const routes = {
   "root": {
