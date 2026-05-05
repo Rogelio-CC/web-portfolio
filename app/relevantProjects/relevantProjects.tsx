@@ -132,11 +132,27 @@ const RelevantProjects = () => {
                         {t('relevantProjects.project1.description')}
                     </p>
                     <p>
-                        <strong>{t('relevantProjects.technologyUsed')}:</strong> Blazor, Blazorise.
+                        <strong>{t('relevantProjects.ContributeQuestionText')}:</strong> {t('relevantProjects.project1.contributionText')}
                     </p>
                     <p>
-                        <strong>{t('relevantProjects.project1.warningText')}</strong>
+                        <strong>{t('relevantProjects.technologyUsed')}:</strong> HTML, CSS, Blazor server, Entity Framework Core, PostgreSQL, SQL Server, Azure, Render, Docker, Ngrok y Figma.
                     </p>
+                     <a
+                        href="https://github.com/Rogelio-CC/CRUD-Indicadores-La-Salle-Bajio-Frontend"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="projectRepoBtn"
+                    >
+                        {t('relevantProjects.project1.buttonTextFrontendRepository')}
+                    </a>
+                    <a
+                        href="https://github.com/Rogelio-CC/CRUD-Indicadores-La-Salle-Bajio-Backend"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="projectRepoBtn"
+                    >
+                        {t('relevantProjects.project1.buttonTextBackendRepository')}
+                    </a>
                 </div>
             </div>
             {/* Project: FakeBuster */}
@@ -155,6 +171,9 @@ const RelevantProjects = () => {
                     <h3>{t('relevantProjects.project2.title')}</h3>
                     <p>
                         {t('relevantProjects.project2.description')}
+                    </p>
+                    <p>
+                        <strong>{t('relevantProjects.ContributeQuestionText')}:</strong> {t('relevantProjects.project2.contributionText')}
                     </p>
                     <p>
                         <strong>{t('relevantProjects.technologyUsed')}:</strong> HTML, CSS, Python.
@@ -184,6 +203,9 @@ const RelevantProjects = () => {
                     <h3>{t('relevantProjects.project3.title')}</h3>
                     <p>
                         {t('relevantProjects.project3.description')}
+                    </p>
+                    <p>
+                        <strong>{t('relevantProjects.ContributeQuestionText')}:</strong> {t('relevantProjects.project3.contributionText')}
                     </p>
                     <p>
                         <strong>{t('relevantProjects.technologyUsed')}:</strong> HTML y CSS.
@@ -216,7 +238,10 @@ const RelevantProjects = () => {
                         {t('relevantProjects.project4.description')}
                     </p>
                     <p>
-                        <strong>{t('relevantProjects.technologyUsed')}:</strong> Expo, JavaScript, CSS, Node js, MySQL.
+                        <strong>{t('relevantProjects.ContributeQuestionText')}:</strong> {t('relevantProjects.project4.contributionText')}
+                    </p>
+                    <p>
+                        <strong>{t('relevantProjects.technologyUsed')}:</strong> React Native (Expo), JavaScript, CSS, Node.js, MySQL y Figma.
                     </p>
                     <a
                         href="https://github.com/Rogelio-CC/My-book-shelf-expo"
@@ -247,7 +272,10 @@ const RelevantProjects = () => {
                         {t('relevantProjects.project5.description')}
                     </p>
                     <p>
-                        <strong>{t('relevantProjects.technologyUsed')}:</strong> Expo, JavaScript, CSS.
+                        <strong>{t('relevantProjects.ContributeQuestionText')}:</strong> {t('relevantProjects.project5.contributionText')}
+                    </p>
+                    <p>
+                        <strong>{t('relevantProjects.technologyUsed')}:</strong>  React Native (Expo), JavaScript, CSS y Node.js.
                     </p>
                     <a
                         href="https://github.com/Rogelio-CC/Expo-React-Native-Basic-Calculator"

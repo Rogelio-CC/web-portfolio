@@ -26,10 +26,11 @@ const Navbar = () => {
                     <img src={myLogo} alt="My logo" className="myLogo" />
                     <div className='containerLabels'>
                         <a href="#projects">{t("navbar.projects")}</a>
-                        <a href="#techicalSkills">{t("navbar.technicalSkills")}</a>
+                        <a href="#technicalSkills">{t("navbar.technicalSkills")}</a>
                         <a href="#experience">{t("navbar.experience")}</a>
                         <a href="#aptitudes">{t("navbar.softSkills")}</a>
                         <a href="#aboutMe">{t("navbar.aboutMe")}</a>
+                        <a href="#certifications">{t("navbar.certifications")}</a>
                     </div>
                     <div className='containerIcons'>
                         <a href="https://github.com/Rogelio-CC" target="_blank" rel="noopener noreferrer">

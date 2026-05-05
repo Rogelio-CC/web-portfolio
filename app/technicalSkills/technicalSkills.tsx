@@ -1,9 +1,13 @@
 // General imports
 import { useEffect, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next'; // useTranslation hook imported to enable translations
-import { FaGithub, FaHtml5, FaCss3Alt, FaReact, FaFigma, FaNodeJs, FaPython } from "react-icons/fa";
+import { FaGithub, FaHtml5, FaCss3Alt, FaReact, FaFigma, FaNodeJs, FaPython, FaAws, FaDocker } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiBlazor, SiMysql, SiExpo } from "react-icons/si";
+import { SiBlazor, SiMysql, SiExpo, SiDotnet, SiRender, SiNgrok } from "react-icons/si";
+import { TbBrandCSharp } from 'react-icons/tb';
+import { BiLogoPostgresql } from "react-icons/bi";
+import { DiMsqlServer } from "react-icons/di";
+import { VscAzure } from "react-icons/vsc";
 import '../welcome/welcome.css';
 
 const TechnicalSkills = () => {
@@ -41,7 +45,7 @@ const TechnicalSkills = () => {
   return (
     <section>
       {/* "Technical Skills" title with fade-in animation */}
-      <div className={`technicalSkillsTitle${technicalSkillsTitleVisible ? ' visible' : ''}`} id="techicalSkills" ref={technicalSkillsTitleRef}>
+      <div className={`technicalSkillsTitle${technicalSkillsTitleVisible ? ' visible' : ''}`} id="technicalSkills" ref={technicalSkillsTitleRef}>
         <h2>{t('technicalSkills.title')}</h2>
       </div>
       <div className="containerContentTechnicalSkills">
@@ -56,6 +60,10 @@ const TechnicalSkills = () => {
             <h3>Python</h3>
           </div>
           <div className="technicalSkillsCard">
+            <TbBrandCSharp  className="iconStyleTechnicalSkills" />
+            <h3>C#</h3>
+          </div>
+          <div className="technicalSkillsCard">
             <FaHtml5 className="iconStyleTechnicalSkills" />
             <h3>HTML</h3>
           </div>
@@ -63,13 +71,13 @@ const TechnicalSkills = () => {
             <FaCss3Alt className="iconStyleTechnicalSkills" />
             <h3>CSS</h3>
           </div>
+           <div className="technicalSkillsCard">
+            <FaReact className="iconStyleTechnicalSkills" />
+            <h3>React</h3>
+          </div>
           <div className="technicalSkillsCard">
             <SiExpo className="iconStyleTechnicalSkills" />
             <h3>Expo</h3>
-          </div>
-          <div className="technicalSkillsCard">
-            <FaReact className="iconStyleTechnicalSkills" />
-            <h3>React</h3>
           </div>
           <div className="technicalSkillsCard">
             <SiBlazor className="iconStyleTechnicalSkills" />
@@ -80,8 +88,32 @@ const TechnicalSkills = () => {
             <h3>Node js</h3>
           </div>
           <div className="technicalSkillsCard">
+            <SiDotnet className="iconStyleTechnicalSkills" />
+            <h3>EFCore</h3>
+          </div>
+          <div className="technicalSkillsCard">
             <SiMysql className="iconStyleTechnicalSkills" />
             <h3>MySQL</h3>
+          </div>
+          <div className="technicalSkillsCard">
+            <BiLogoPostgresql className="iconStyleTechnicalSkills" />
+            <h3>PostgreSQL</h3>
+          </div>
+          <div className="technicalSkillsCard">
+            <DiMsqlServer className="iconStyleTechnicalSkills" />
+            <h3>SQL Server</h3>
+          </div>
+          <div className="technicalSkillsCard">
+            <FaAws className="iconStyleTechnicalSkills" />
+            <h3>AWS</h3>
+          </div>
+          <div className="technicalSkillsCard">
+            <VscAzure className="iconStyleTechnicalSkills" />
+            <h3>Azure</h3>
+          </div>
+           <div className="technicalSkillsCard">
+            <SiRender className="iconStyleTechnicalSkills" />
+            <h3>Render</h3>
           </div>
           <div className="technicalSkillsCard">
             <FaGithub className="iconStyleTechnicalSkills" />
@@ -90,6 +122,14 @@ const TechnicalSkills = () => {
           <div className="technicalSkillsCard">
             <FaFigma className="iconStyleTechnicalSkills" />
             <h3>Figma</h3>
+          </div>
+          <div className="technicalSkillsCard">
+            <SiNgrok className="iconStyleTechnicalSkills" />
+            <h3>Ngrok</h3>
+          </div>
+          <div className="technicalSkillsCard">
+            <FaDocker className="iconStyleTechnicalSkills" />
+            <h3>Docker</h3>
           </div>
         </div>
       </div>

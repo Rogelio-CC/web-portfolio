@@ -1,5 +1,6 @@
 // Imports of necessary modules or components
 import { Suspense, lazy, useState, useEffect } from 'react';
+import Certifications from '~/certifications/certifications';
 
 // Lazy load components for better performance
 const Navbar = lazy(() => import('~/navbar/navbar'));
@@ -53,6 +54,7 @@ export function Welcome() {
         <Experience />
         <SoftSkills />
         <AboutMe />
+        <Certifications />
       </section>
     </Suspense>
   );

@@ -17,7 +17,7 @@ const ImageProjectModal: React.FC<ImageProjectModalProps> = ({ open, onClose, im
     
     // Render the modal using React Portal
     return ReactDom.createPortal(
-        <div className="imageModal">
+        <div className="imageModal" onClick={onClose}>
             <IoMdClose className="closeIcon" onClick={onClose} />
             {/* Enlarged image */}
             <img src={imgSrc} alt="Image expanded" className="imageModalImg" />
