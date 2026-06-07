@@ -188,38 +188,6 @@ const RelevantProjects = () => {
                     </a>
                 </div>
             </div>
-            {/* Project: O'Clock Store */}
-            <div className={`projectsContainerWeb${projectContainerWeb3Visible ? ' visible' : ''}`} ref={projectContainerWeb3Ref}>
-                <div className="projectImagesCarouselWeb">
-                    <button className="carouselBtn" onClick={() => handlePrevImg(oClockStoreVideos, setCurrentOCSVideo)} aria-label="Imagen anterior">{'<'}</button>
-                    <video
-                        src={oClockStoreVideos[currentOCSVideo]}
-                        controls
-                        className="webProjectsImg"
-                    />
-                    <button className="carouselBtn" onClick={() => handleNextImg(oClockStoreVideos, setCurrentOCSVideo)} aria-label="Imagen siguiente">{'>'}</button>
-                </div>
-                <div className="projectInfo">
-                    <h3>{t('relevantProjects.project3.title')}</h3>
-                    <p>
-                        {t('relevantProjects.project3.description')}
-                    </p>
-                    <p>
-                        <strong>{t('relevantProjects.ContributeQuestionText')}:</strong> {t('relevantProjects.project3.contributionText')}
-                    </p>
-                    <p>
-                        <strong>{t('relevantProjects.technologyUsed')}:</strong> HTML y CSS.
-                    </p>
-                    <a
-                        href="https://github.com/Rogelio-CC/O_Clock_Store"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="projectRepoBtn"
-                    >
-                        {t('relevantProjects.buttonText')}
-                    </a>
-                </div>
-            </div>
             {/* Project: MyBookShelf */}
             <div className={`projectsContainerMobile${projectContainerMobile1Visible ? ' visible' : ''}`} ref={projectContainerMobile1Ref}>
                 <div className="projectImagesCarouselMobile">
@@ -279,6 +247,38 @@ const RelevantProjects = () => {
                     </p>
                     <a
                         href="https://github.com/Rogelio-CC/Expo-React-Native-Basic-Calculator"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="projectRepoBtn"
+                    >
+                        {t('relevantProjects.buttonText')}
+                    </a>
+                </div>
+            </div>
+             {/* Project: O'Clock Store */}
+            <div className={`projectsContainerWeb${projectContainerWeb3Visible ? ' visible' : ''}`} ref={projectContainerWeb3Ref}>
+                <div className="projectImagesCarouselWeb">
+                    <button className="carouselBtn" onClick={() => handlePrevImg(oClockStoreVideos, setCurrentOCSVideo)} aria-label="Imagen anterior">{'<'}</button>
+                    <video
+                        src={oClockStoreVideos[currentOCSVideo]}
+                        controls
+                        className="webProjectsImg"
+                    />
+                    <button className="carouselBtn" onClick={() => handleNextImg(oClockStoreVideos, setCurrentOCSVideo)} aria-label="Imagen siguiente">{'>'}</button>
+                </div>
+                <div className="projectInfo">
+                    <h3>{t('relevantProjects.project3.title')}</h3>
+                    <p>
+                        {t('relevantProjects.project3.description')}
+                    </p>
+                    <p>
+                        <strong>{t('relevantProjects.ContributeQuestionText')}:</strong> {t('relevantProjects.project3.contributionText')}
+                    </p>
+                    <p>
+                        <strong>{t('relevantProjects.technologyUsed')}:</strong> HTML y CSS.
+                    </p>
+                    <a
+                        href="https://github.com/Rogelio-CC/O_Clock_Store"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="projectRepoBtn"

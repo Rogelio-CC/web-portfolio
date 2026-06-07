@@ -17,7 +17,7 @@ i18n.use(initReactI18next).init({
                 // Second section: Experience
                 experience: {
                     title: "Experiencia",
-                    description: "He adquirido 3 años de experiencia práctica en el desarrollo de software con proyectos universitarios y personales (en especial el proyecto web realizado en la misma universidad como parte de mi servicio profesional), con enfoque en aplicaciones web y móvil."
+                    description: "Junto con los 6 meses del servicio profesional, he adquirido 2 años de experiencia práctica en el desarrollo de software con proyectos universitarios y personales con enfoque en aplicaciones web y móvil."
                 },
                 // Third section: Header Title
                 headerTitle: {
@@ -42,7 +42,7 @@ i18n.use(initReactI18next).init({
                     buttonText: "Consultar repositorio público de github",
                     ContributeQuestionText: "¿Qué aporté en este proyecto?",
                     project1: {
-                        title: "Sistema de indicadores y estrategias",
+                        title: "Sistema de indicadores y estrategias (servicio profesional)",
                         description: "Proyecto de plataforma web para gestionar diferentes elementos como indicadores, estrategias, facultades, carreras, usuarios, entre otros.",
                         contributionText: "Mi contribución principal fue el desarrollo del frontend utilizando Blazor Server, donde implementé la interfaz de usuario y la lógica de interacción. Además, participé en la creación y modificación de los endpoints y asisití en las migraciones con PostgreSQL y SQL Server con el uso de Entity Framework Core. También apoye y contribuí a la configuración de imágenes personalizadas del Front-end y Back-end de Docker y despliegue de esas imágenes en Azure y Render; utilicé Ngrok para la comunicación entre la base de datos en SQL Server y la imagen del Back-end desplegada en Render. En el diseño visual, aporté ideas y colaboré en la creación de prototipos utilizando Figma.",
                         buttonTextFrontendRepository: "Consultar repositorio frontend en github",
@@ -109,7 +109,7 @@ i18n.use(initReactI18next).init({
                 },
                 experience: {
                     title: "Experience",
-                    description: "I have gained three years of practical experience in software development through university and personal projects (particularly the web project I completed at the same university as part of my professional internship), with a focus on web and mobile applications."
+                    description: "Along with the 6 months of professional service, I have gained two years of practical experience in software development through university and personal projects with a focus on web and mobile applications."
                 },
                 headerTitle: {
                     title: "Hello, world! I'm Rogelio",
@@ -131,7 +131,7 @@ i18n.use(initReactI18next).init({
                     buttonText: "View public github repository",
                     ContributeQuestionText: "What did I contribute to this project?",
                     project1: {
-                        title: "System of indicators and strategies (in development)",
+                        title: "System of indicators and strategies (professional service)",
                         description: "Web platform project to manage different elements such as indicators, strategies, faculties, careers, users, among others.",
                         contributionText: "My main contribution was the development of the frontend using Blazor Server, where I implemented the user interface and interaction logic. Additionally, I participated in the creation and modification of endpoints and assisted in migrations with PostgreSQL and SQL Server using Entity Framework Core. I also supported and contributed to the configuration of custom images for both the Front-end and Back-end of Docker, as well as the deployment of those images on Azure and Render; I used Ngrok for communication between the SQL Server database and the Back-end image deployed on Render. In terms of visual design, I contributed ideas and collaborated in creating prototypes using Figma.",
                         buttonTextFrontendRepository: "View frontend repository on github",
