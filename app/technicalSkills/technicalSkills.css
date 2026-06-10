@@ -66,11 +66,55 @@
   .technicalSkillsTitle {
     font-size: 3.5rem;
   }
+
+  .containerContentTechnicalSkills {
+    margin: 1.5rem;
+  }
+
+  .technicalSkillsCards {
+    gap: 0.5rem;
+  }
+
+  .technicalSkillsCard {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.8rem 1rem 1.5rem;
+  }
+
+  .technicalSkillsCard h3 {
+    font-size: 1.3rem;
+  }
+
+  .iconStyleTechnicalSkills {
+    font-size: 2.2rem;
+  }
 }
 
 /* Responsive styles (tablet) */
 @media (min-width: 600px) and (max-width: 1200px) {
   .technicalSkillsTitle {
     font-size: 4.2rem;
+  }
+
+  .containerContentTechnicalSkills {
+    margin: 1.5rem;
+  }
+
+  .technicalSkillsCards {
+    gap: 0.5rem;
+  }
+
+  .technicalSkillsCard {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.8rem 1rem 1.5rem;
+  }
+
+  .technicalSkillsCard h3 {
+    font-size: 1.3rem;
+  }
+
+  .iconStyleTechnicalSkills {
+    font-size: 2.2rem;
   }
 }

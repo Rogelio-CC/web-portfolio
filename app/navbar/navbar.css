@@ -122,17 +122,32 @@
 /* Responsive styles (tablet) */
 @media (min-width: 600px) and (max-width: 1200px) {
 
-  .containerIcons {
-    gap: 1px;
+  .navbarMain {
+    padding: 0.7rem 1rem;
+  }
+
+   .navbarLinks {
+    display: flex;
     align-items: center;
+    width: 100%;
+  }
+
+  .containerLabels {
+    margin: 0 auto;
+    gap: 12px;
   }
 
   .containerLabels a {
-    font-size: 0.7rem;
+    font-size: 0.58rem;
+  }
+
+  .containerIcons {
+    gap: 5px;
+    margin-left: 0rem;
   }
 
   .iconsNavbar {
     font-size: 2rem;
-    margin-left: 0.5rem;
+    margin-left: 0.3rem;
   }
 }
