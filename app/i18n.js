@@ -96,6 +96,10 @@ i18n.use(initReactI18next).init({
                     certification2: {
                         title: "Cisco: Introduction to Cybersecurity",
                         startYear: "2023",
+                    },
+                    certification3: {
+                        title: "Big School: IA Development",
+                        startYear: "2026",
                     }
                 }
             }
@@ -182,6 +186,10 @@ i18n.use(initReactI18next).init({
                     certification2: {
                         title: "Cisco: Introduction to Cybersecurity",
                         startYear: "2023",
+                    },
+                    certification3: {
+                        title: "Big School: IA Development",
+                        startYear: "2026",
                     }
                 }
             }

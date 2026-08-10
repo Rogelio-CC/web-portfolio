@@ -7,20 +7,23 @@ import './certifications.css';
 
 import AWSCloudPractitioner from '../certifications/images/AWSCloudPractitioner.png';
 import CiscoCertification from '../certifications/images/CiscoIntroductionToCybersecurity.png';
+import BigSchoolIADevelopment from '../certifications/images/IADevelopmentCertificate.png';
 
 const Certifications = () => {
   const { t } = useTranslation(); // useTranslation hook enabled
 
   const AWS = AWSCloudPractitioner;
   const Cisco = CiscoCertification;
-
+  const BigSchool = BigSchoolIADevelopment;
   // Refs and states for animation on scroll
   const certificationsTitleRef = useRef<HTMLDivElement>(null);
   const certificationsContainerWeb1Ref = useRef<HTMLDivElement>(null);
   const certificationsContainerWeb2Ref = useRef<HTMLDivElement>(null);
+  const certificationsContainerWeb3Ref = useRef<HTMLDivElement>(null);
   const [certificationsTitleVisible, setCertificationsTitleVisible] = useState(false);
   const [certificationsContainerWeb1Visible, setCertificationsContainerWeb1Visible] = useState(false);
   const [certificationsContainerWeb2Visible, setCertificationsContainerWeb2Visible] = useState(false);
+  const [certificationsContainerWeb3Visible, setCertificationsContainerWeb3Visible] = useState(false);
 
   // State for the modal that shows the expanded image when clicking on any image of the projects
   const [expandedImg, setExpandedImg] = useState<string | null>(null);
@@ -47,7 +50,7 @@ const Certifications = () => {
     useAnimationObserver(certificationsTitleRef, setCertificationsTitleVisible);
     useAnimationObserver(certificationsContainerWeb1Ref, setCertificationsContainerWeb1Visible);
     useAnimationObserver(certificationsContainerWeb2Ref, setCertificationsContainerWeb2Visible);
-
+    useAnimationObserver(certificationsContainerWeb3Ref, setCertificationsContainerWeb3Visible);
     return (
         <section>
              {/* "Certifications" title and containers with fade-in animation */}
@@ -105,6 +108,23 @@ const Certifications = () => {
                     >
                         {t('certifications.badgeButtonText')}
                     </a>
+                </div>
+            </div>
+            {/* Certification: Big School: IA Development */}
+            <div className={`certificationsContainerWeb${certificationsContainerWeb3Visible ? ' visible' : ''}`} ref={certificationsContainerWeb3Ref}>
+                <div className="certificationContainer">
+                    <img
+                        src={BigSchool}
+                        alt={`Big School: IA Development image`}
+                        className="certificationsImg"
+                        onClick={() => setExpandedImg(BigSchool)}
+                    />
+                </div>
+                <div className="certificationInfo">
+                    <h3>{t('certifications.certification3.title')}</h3>
+                    <p>
+                        <strong>{t('certifications.textYear1')}:</strong> {t('certifications.certification3.startYear')}
+                    </p>
                 </div>
             </div>
 
