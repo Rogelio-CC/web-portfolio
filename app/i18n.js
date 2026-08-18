@@ -12,7 +12,7 @@ i18n.use(initReactI18next).init({
                 // First section: About Me
                 aboutMe: {
                     title: "Sobre mí",
-                    description: "Mi nombre es Rogelio Ceballos Castillo y soy recién graduado de la carrera de Ingeniería de Software y Sistemas Computacionales en la universidad La Salle Bajío. Me interesa aplicar mis conocimientos en proyectos de software para aportar soluciones a problemas en el mundo de la tecnología y me apasiona el desarrollo web, en especial el diseño web, donde las interfaces son primordiales para asegurar que el usuario tenga la mejor experiencia posible y sea orientado adecuadamente en el sitio web o aplicación."
+                    description: "Mi nombre es Rogelio Ceballos Castillo y soy Ingeniero de Software y Sistemas Computacionales enfocado en desarrollo Fullstack y Frontend. Experiencia práctica en la creación de sistemas de gestión web y aplicaciones móviles, orientados a resolver necesidades tecnológicas y mejorar la experiencia del usuario. Capacitado para adaptarme rápidamente y colaborar en entornos de trabajo dinámicos."
                 },
                 // Second section: Experience
                 experience: {
@@ -109,7 +109,7 @@ i18n.use(initReactI18next).init({
             translation: {
                 aboutMe: {
                     title: "About Me",
-                    description: "My name is Rogelio Ceballos Castillo and I recently graduated with a degree in Software and Computer Systems Engineering from La Salle Bajío university. I am interested in applying my knowledge to software project to provide solutions to problems in the tech industry, and I am passionate about web development—specially web design—where user interfaces are essential to ensuring that user has the best experience and is guided effectively through the website or application."
+                    description: "My name is Rogelio Ceballos Castillo and I'm a Software and Computer Systems Engineer specializing in full-stack and front-end development. I have practical experience creating web management systems and mobile applications designed to address technological needs and improve the user experience. I am able to adapt quickly and collaborate effectively in dynamic work environments."
                 },
                 experience: {
                     title: "Experience",
