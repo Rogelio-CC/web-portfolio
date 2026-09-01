@@ -63,11 +63,6 @@ i18n.use(initReactI18next).init({
                         description: "Proyecto de aplicación móvil para administrar, visualizar y puntuar libros. Permite ver algunos libros y crear listas personalizadas, agregando o eliminando libros.",
                         contributionText: "Mi contribución principal fue el desarrollo de la aplicación móvil utilizando React Native con Expo, donde implementé la interfaces de usuario y la lógica de interacción. Además, participé en la creación de la API REST con Node.js y Express para gestionar los datos de los libros, utilizando MySQL como base de datos. También aporté ideas y colaboré en la creación de prototipos utilizando Figma. Como dato extra, esta aplicación móvil originalmente estaba planeada para ser desarrollada con Swift y Java, pero tiempo de después se cambió por un entorno con React Native con Expo para facilitar el desarrollo multiplataforma."
                     },
-                    project5: {
-                        title: "Calculadora móvil",
-                        description: "Proyecto de calculadora para dispositivos móviles, con interfaz intuitiva. Permite realizar operaciones básicas, pensado para usabilidad en pantallas táctiles.",
-                        contributionText: "Mi contribución principal fue el desarrollo de la aplicación móvil utilizando React Native con Expo, donde implementé la interfaz de usuario y la lógica de interacción."
-                    }
                 },
                 // Sixth section: Soft Skills
                 softSkills: {
@@ -156,11 +151,6 @@ i18n.use(initReactI18next).init({
                         description: "Mobile application project to manage, view, and rate books. Allows viewing some books and creating personalized lists by adding or removing books.",
                         contributionText: "My main contribution was developing the mobile app using React Native with Expo, where I implemented the user interfaces and interaction logic. In addition, I participated in the creation of the REST API using Node.js and Express to manage book data, using MySQL as the database. I also contributed ideas and collaborated on prototyping using Figma. As a side note, this mobile app was originally planned to be developed using Swift and Java, but was later changed to a React Native with Expo environment to facilitate cross-platform development."
                     },
-                    project5: {
-                        title: "Mobile Calculator",
-                        description: "Calculator project for mobile devices, with an intuitive interface. Allows performing basic operations, designed for usability on touch screens.",
-                        contributionText: "My main contribution was developing the mobile app using React Native with Expo, where I implemented the user interface and interaction logic."
-                    }
                 },
                 softSkills: {
                     title: "Soft Skills",

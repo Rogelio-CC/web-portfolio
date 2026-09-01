@@ -1,9 +1,9 @@
 // General imports
 import { useEffect, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next'; // useTranslation hook imported to enable translations
-import { FaGithub, FaHtml5, FaCss3Alt, FaReact, FaFigma, FaNodeJs, FaPython, FaAws, FaDocker } from "react-icons/fa";
+import { FaGithub, FaHtml5, FaCss3Alt, FaReact, FaFigma, FaNodeJs, FaPython, FaAws, FaDocker, FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiBlazor, SiMysql, SiExpo, SiDotnet, SiRender, SiNgrok } from "react-icons/si";
+import { SiBlazor, SiMysql, SiExpo, SiDotnet, SiRender } from "react-icons/si";
 import { TbBrandCSharp } from 'react-icons/tb';
 import { BiLogoPostgresql } from "react-icons/bi";
 import { DiMsqlServer } from "react-icons/di";
@@ -71,6 +71,10 @@ const TechnicalSkills = () => {
             <FaCss3Alt className="iconStyleTechnicalSkills" />
             <h3>CSS</h3>
           </div>
+          <div className="technicalSkillsCard">
+            <FaBootstrap className="iconStyleTechnicalSkills" />
+            <h3>Bootstrap</h3>
+          </div>
            <div className="technicalSkillsCard">
             <FaReact className="iconStyleTechnicalSkills" />
             <h3>React</h3>
@@ -122,10 +126,6 @@ const TechnicalSkills = () => {
           <div className="technicalSkillsCard">
             <FaFigma className="iconStyleTechnicalSkills" />
             <h3>Figma</h3>
-          </div>
-          <div className="technicalSkillsCard">
-            <SiNgrok className="iconStyleTechnicalSkills" />
-            <h3>Ngrok</h3>
           </div>
           <div className="technicalSkillsCard">
             <FaDocker className="iconStyleTechnicalSkills" />

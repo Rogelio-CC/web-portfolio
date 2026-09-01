@@ -4,13 +4,6 @@ import { useTranslation } from 'react-i18next'; // useTranslation hook imported 
 import ImageProjectModal from './imageProjectModal';
 import '../welcome/welcome.css';
 
-// Importing images from Mobile Calculator project 
-import imageCal1 from '../relevantProjects/images/ImagesCalculator/Image_Calculator1.jpeg';
-import imageCal2 from '../relevantProjects/images/ImagesCalculator/Image_Calculator2.jpeg';
-import imageCal3 from '../relevantProjects/images/ImagesCalculator/Image_Calculator3.jpeg';
-import imageCal4 from '../relevantProjects/images/ImagesCalculator/Image_Calculator4.jpeg';
-import imageCal5 from '../relevantProjects/images/ImagesCalculator/Image_Calculator5.jpeg';
-
 // Importing images from FakeBuster project
 import imageFB1 from '../relevantProjects/images/ImageFakeBuster/FirstImage_FakeBister.png';
 import imageFB2 from '../relevantProjects/images/ImageFakeBuster/SecondImage_FakeBister.png';
@@ -40,7 +33,6 @@ import imageIP5 from '../relevantProjects/images/ImageIntershipProject/ImageInte
 const RelevantProjects = () => {
     const { t } = useTranslation(); // useTranslation hook enabled
     // Array that contains the images and video of each project
-    const calculatorImages = [imageCal1, imageCal2, imageCal3, imageCal4, imageCal5];
     const fakeBusterImages = [imageFB1, imageFB2, imageFB3];
     const myBookShelfImages = [imageMBS1, imageMBS2, imageMBS3, imageMBS4, imageMBS5];
     const oClockStoreVideos = [imageOCS1, imageOCS2, imageOCS3];
@@ -52,19 +44,16 @@ const RelevantProjects = () => {
     const projectContainerWeb2Ref = useRef<HTMLDivElement>(null);
     const projectContainerWeb3Ref = useRef<HTMLDivElement>(null);
     const projectContainerMobile1Ref = useRef<HTMLDivElement>(null);
-    const projectContainerMobile2Ref = useRef<HTMLDivElement>(null);
     const [projectsTitleVisible, setProjectsTitleVisible] = useState(false);
     const [projectContainerWeb1Visible, setProjectContainerWeb1Visible] = useState(false);
     const [projectContainerWeb2Visible, setProjectContainerWeb2Visible] = useState(false);
     const [projectContainerWeb3Visible, setProjectContainerWeb3Visible] = useState(false);
     const [projectContainerMobile1Visible, setProjectContainerMobile1Visible] = useState(false);
-    const [projectContainerMobile2Visible, setProjectContainerMobile2Visible] = useState(false);
 
     // State for the modal that shows the expanded image when clicking on any image of the projects
     const [expandedImg, setExpandedImg] = useState<string | null>(null);
 
     // State declarations for project images and videos
-    const [currentCalcImg, setCurrentCalcImg] = useState(0);
     const [currentFBImg, setCurrentFBImg] = useState(0);
     const [currentMBSImg, setCurrentMBSImg] = useState(0);
     const [currentOCSVideo, setCurrentOCSVideo] = useState(0);
@@ -104,7 +93,6 @@ const RelevantProjects = () => {
     useAnimationObserver(projectContainerWeb2Ref, setProjectContainerWeb2Visible);
     useAnimationObserver(projectContainerWeb3Ref, setProjectContainerWeb3Visible);
     useAnimationObserver(projectContainerMobile1Ref, setProjectContainerMobile1Visible);
-    useAnimationObserver(projectContainerMobile2Ref, setProjectContainerMobile2Visible);
 
     return (
         <section>
@@ -209,44 +197,10 @@ const RelevantProjects = () => {
                         <strong>{t('relevantProjects.ContributeQuestionText')}:</strong> {t('relevantProjects.project4.contributionText')}
                     </p>
                     <p>
-                        <strong>{t('relevantProjects.technologyUsed')}:</strong> React Native (Expo), JavaScript, CSS, Node.js, MySQL y Figma.
+                        <strong>{t('relevantProjects.technologyUsed')}:</strong> React Native (Expo), JavaScript, CSS, Node.js (Express.js), MySQL y Figma.
                     </p>
                     <a
                         href="https://github.com/Rogelio-CC/My-book-shelf-expo"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="projectRepoBtn"
-                    >
-                        {t('relevantProjects.buttonText')}
-                    </a>
-                </div>
-            </div>
-            {/* Project: Mobile Calculator */}
-            <div className={`projectsContainerMobile${projectContainerMobile2Visible ? ' visible' : ''}`} ref={projectContainerMobile2Ref}>
-                <div className="projectImagesCarouselMobile">
-                    <button className="carouselBtn" onClick={() => handlePrevImg(calculatorImages, setCurrentCalcImg)} aria-label="Imagen anterior">{'<'}</button>
-                    <img
-                        src={calculatorImages[currentCalcImg]}
-                        alt={`Mobile Calculator image ${currentCalcImg + 1}`}
-                        className="mobileProjectsImg"
-                        onClick={() => setExpandedImg(calculatorImages[currentCalcImg])}
-
-                    />
-                    <button className="carouselBtn" onClick={() => handleNextImg(calculatorImages, setCurrentCalcImg)} aria-label="Imagen siguiente">{'>'}</button>
-                </div>
-                <div className="projectInfo">
-                    <h3>{t('relevantProjects.project5.title')}</h3>
-                    <p>
-                        {t('relevantProjects.project5.description')}
-                    </p>
-                    <p>
-                        <strong>{t('relevantProjects.ContributeQuestionText')}:</strong> {t('relevantProjects.project5.contributionText')}
-                    </p>
-                    <p>
-                        <strong>{t('relevantProjects.technologyUsed')}:</strong>  React Native (Expo), JavaScript, CSS y Node.js.
-                    </p>
-                    <a
-                        href="https://github.com/Rogelio-CC/Expo-React-Native-Basic-Calculator"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="projectRepoBtn"
