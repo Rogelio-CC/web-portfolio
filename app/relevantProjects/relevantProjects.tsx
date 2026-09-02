@@ -229,7 +229,7 @@ const RelevantProjects = () => {
                         <strong>{t('relevantProjects.ContributeQuestionText')}:</strong> {t('relevantProjects.project3.contributionText')}
                     </p>
                     <p>
-                        <strong>{t('relevantProjects.technologyUsed')}:</strong> HTML y CSS.
+                        <strong>{t('relevantProjects.technologyUsed')}:</strong> HTML, CSS y Bootstrap.
                     </p>
                     <a
                         href="https://github.com/Rogelio-CC/O_Clock_Store"
