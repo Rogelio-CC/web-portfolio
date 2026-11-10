@@ -17,7 +17,7 @@ i18n.use(initReactI18next).init({
                 // Second section: Experience
                 experience: {
                     title: "Experiencia",
-                    description: "He adquirido 2 años de experiencia práctica en el desarrollo de software con proyectos universitarios y personales con enfoque en aplicaciones web y móvil."
+                    description: "Sistema de indicadores (prácticas profesionales/servicio profesional) – Universidad La Salle Bajío (Sep 2024 – Abr 2026)."
                 },
                 // Third section: Header Title
                 headerTitle: {
@@ -108,7 +108,7 @@ i18n.use(initReactI18next).init({
                 },
                 experience: {
                     title: "Experience",
-                    description: "I have gained two years of practical experience in software development through university and personal projects with a focus on web and mobile applications."
+                    description: "Indicators System (Internship / Professional Service) – Universidad La Salle Bajío (Sep 2024 – Apr 2026)."
                 },
                 headerTitle: {
                     title: "Hello, world! I'm Rogelio",

@@ -20,6 +20,10 @@
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
+.experienceContentText p {
+  margin: 3rem 0;
+}
+
 .experienceContentImage {
   width: 300px;
   height: 300px;
@@ -97,6 +101,10 @@
     margin: 1rem;
     gap: 2rem;
   }
+
+  .experienceContentText p {
+    margin: 0;
+  }
 }
 
 /* Responsive styles (tablet) */
@@ -122,5 +130,9 @@
     flex-direction: column;
     margin: 2rem;
     gap: 3rem;
+  }
+
+  .experienceContentText p {
+    margin: 0;
   }
 }
